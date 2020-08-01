@@ -1,0 +1,1240 @@
+/*===================================================
+================= page d accueil===================== */
+
+  :root{
+    --app_color:#4a148c;
+    --app-family:"Lato",sans-serif;
+    --brand-color:#610ec7;
+    --transp-black-color: rgba(0, 0, 0, .8);
+   }
+  html,body{
+  
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font:"Lato",sans-serif;
+    overflow-x: hidden;
+   }
+  body{
+    padding: 0;
+    background: #fafafa;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  html{
+    font-family:var(--app-family);
+  }
+  .brand-color{
+    color:tomato;
+  }
+  .white-text{
+    color:white;
+  }
+  
+  .black-text{
+   color:black;
+  }
+  div.super-cover{
+    height: 85%;
+    /* background:#4a148c; */
+    background:url("../img/banner53.jpg");
+    background-size: cover;
+    width:100%;
+    position: relative;
+  }
+  .super-cover .darken{
+    position: relative;
+    top:-10px;
+    left: 0;
+    right: 0;
+    height: 102%;
+    width: 100%;
+    background:  rgba(7, 7, 7, 0.8);
+  }
+  .motivation-container{
+    padding-top: 30px !important;
+  }
+  .motivation-text{
+  
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-family:var(--app-family);
+    transition: font-size 1s linear;
+    padding: 5px;
+    line-height: 1.5em;
+    z-index: 1;
+  }
+  .nav{
+    height: 70px;
+    line-height: 70px;
+    background: darkslategrey;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 100;
+    /* background:var(--transp-black-color); */
+    z-index: 50; 
+  }
+  .brand{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: var(--app-family);
+    padding-left:10px;
+   }
+   .menu-container{
+    text-align: right;
+    float: right;
+  }  
+  .nav .menu{
+    margin:0px 30px 0px 0px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  .nav .menu a{
+    text-decoration: none;
+    color:white;
+    line-height: 70px;
+    margin:7px;
+    padding:6px;
+    transition: background 0.3s linear;
+   }
+   
+  .menu-toggle{
+    color:white;
+    margin:0 40px 0 0;
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+   }
+   
+   .menu-toggle label{
+     cursor: pointer;
+   }
+   
+   .nav #toggle{
+     display: none;
+   }
+   a:hover{
+    text-decoration: none;
+  }
+  .motivation-container{
+    position: absolute;
+    top:50px;
+    width:55%;
+    left: 0; 
+    right: 0; 
+    top: 20%;
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 10%;
+    color:white;
+    border-bottom: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+    padding:10px;
+    word-wrap: break-word;
+    text-align: center;
+  
+  }
+  .motiv-text{
+    font-size: 26px;
+    font-family: var(--app-family);
+   
+  }  
+  .logAs{
+    position: relative;
+    
+  }
+  .logAs-content{
+    position: absolute;
+    left: 33.5%;
+    top: 50%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border: 1px solid gray;
+    display: none;
+  }
+  .logAs-content h2{
+
+    text-align: center;
+    color:darkslategrey !important;
+    margin-top: -10px;
+    font-weight: bold;
+  }
+  .logAs-content ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .logAs-content ul li a{
+    padding: 10px;
+    display: block;
+    text-decoration: none !important;
+    color: black;
+    border: 1px solid gray;
+  }
+  
+  .logAs-content ul li a:hover{
+
+    color: white;
+   }
+  .logoption:hover{
+    background: darkslategrey;
+    color: white;
+   }
+
+   /*==============================================
+   ================btn=============================*/
+
+
+.btn{
+     padding:7px 10px 7px 10px;
+     border-radius: 5px;
+     border:1px solid transparent;
+     font-family: var(--app-family);
+     background: darkslategrey;
+     /* background: var(--app_color) ; */
+     color:white;
+     transition: background 0.5s linear,
+                  font-size 0.4s linear,
+                  border 0.4s linear;
+     text-transform: uppercase;
+     font-size:12px;
+   }
+   .btn:hover {
+    cursor: pointer;
+    background:  white ;
+    color:black;
+    font-weight: bold;
+    font-size: 13px;
+    border:1px solid darkslategrey;
+   
+   }
+   /* .signup-form .input-button1{
+    top: 0;
+    margin-left: 35%;
+   }
+   .signup-form .input-button2{
+    top: 0;
+    float: right;
+    margin-bottom: 5px;
+   }
+   .signup-form .input-button5 a{
+    padding:7px 10px 7px 10px;
+    border-radius: 5px;
+    float: right;
+    border:1px solid gray;
+    font-family: var(--app-family);
+   
+  
+    color:black;
+    transition: background 0.5s linear,
+                 font-size 0.4s linear,
+                 border 0.4s linear;
+    text-transform: uppercase;
+    font-size:12px;   
+   }
+   .signup-form .input-button5 a:hover{
+    background: gray; 
+    color: white;
+   }
+   .signup-form .input-button{
+    top: 0;
+    margin-left: 40%;
+   } */
+
+
+   /* =============================================
+   =========fin des top nav et banner=============*/
+
+   /* =============================================
+   =========start service options=================*/
+
+   .section-component{
+     
+    padding: 10px;
+   }
+   .service-headers{
+    text-align: center;
+    font-family: var(--app-family);
+    font-weight: bold; 
+  }
+   .service-goal-p{
+    text-align: center;
+  }
+  .list-services{
+    /* display:  */
+    background: rgb(243, 243, 243);
+    padding: 20px;
+    text-align: center;
+   }
+   .list-services .item{
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+    padding: 10px;
+    width:30%;
+    line-height: 1.5em;
+    font-family: var(--app-family);
+    text-align: center;
+    margin-bottom: 10px;
+    background:white;
+  }
+  .list-services .item:hover{
+    background: darkslategrey;
+    color: white;
+  }
+  .icon{
+    font-size: 35px;
+  }
+
+  /* =============================================
+   =========end of service options=============*/
+
+   /* =============================================
+   =========start slide mentor options=============*/
+   .allLorems{
+    background: rgb(243, 243, 243);
+   }
+   .allLorems .elementLorem{
+    width: 18.5%;
+    background-color: #fff;
+    border-radius: 20px !important;
+    padding: 10px;
+    margin: 27.4px;
+    display: inline-block;
+  }
+  .allLorems .elementLorem section{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  .allLorems .elementLorem section .headerElement{
+    background-image: linear-gradient(90deg, rgb(105, 146, 146),  rgb(65, 97, 97) 35%, darkslategrey 100%);
+    border-radius: 50%;
+    padding: 45px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  
+  .allLorems .elementLorem section .headerElement .myImg{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -29px !important;
+    margin-left: -29px !important;
+  }
+  .allLorems .elementLorem section .headerElement .myImg img{
+    border-radius: 60px !important;
+  }
+
+  .slidebtn{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .slidebtn a{
+    margin: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .slidebtn a:hover{
+    color: red;
+  }
+
+   /* =============================================
+   =========end of slide mentor options=============*/
+
+   /* =============================================
+   =========start of contact options=============*/
+  .contact-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: rgb(243, 243, 243);
+   }
+  .contact-form .centerContactTitle{
+     text-align: center;
+     margin-top: 80px;
+     color: darkslategrey;
+     padding-top: 10px;
+   }
+  .input-dividerContact{
+    width:25%;
+    display: inline-block;
+    margin:30px 85px 30px 190px;
+    font-weight: bold;
+    background-color:  #fff;
+    padding: 40px;
+    border-radius: 10px;
+    }
+  .input-dividerContact .socioicon{
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    }
+  .input-dividerContact img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+    }
+  .input-dividerContact img:hover{
+    opacity: 0.7;
+    }
+  .input-dividerContact h3,.input-dividerContact p{
+    color: darkslategrey;
+    }
+  .input-fieldContact,.input-button{
+    margin:10px 0px 10px 0px;
+    
+    }
+  .input-fieldContact input[type=text]{
+        padding: 10px;
+        border:2.5px solid darkslategrey;
+    }
+  .input-fieldContact textarea{
+        padding: 30px;
+        border:2.5px solid darkslategrey;
+    }
+  .input-fieldContact input[type=submit]{
+    background: darkslategrey;
+    border: none;
+    color: white;
+    width: 100%;
+    }
+ .input-fieldContact input[type=submit]:hover{
+     background: rgb(25, 43, 43);
+    }
+ .input-fieldContact input,.input-fieldContact textarea{
+    padding:10px;
+    width:97%;
+    border-radius: 5px;
+    border:2.5px solid darkslategrey;
+    transition:border 0.5s linear;
+    margin-top:5px;
+    }
+    
+  .input-fieldContact input:focus {
+    border-color: rgb(77, 74, 74); 
+    outline: 0;
+    box-shadow: 1px 1px 1px #ccc;
+    }
+  .input-fieldContact textarea:focus{
+    border-color: rgb(77, 74, 74); 
+    outline: 0;
+    box-shadow: 1px 1px 1px #ccc;
+    }
+ .input-button, .input-button{
+    display: inline-block;
+    }
+
+.footer{
+    position: relative;
+    bottom:0px;
+    width:100%;
+    padding: 20px 10px 20px 10px;
+    background: rgb(243, 243, 243);
+    border-top: 1px solid rgb(230, 226, 226);
+    background: #fff;
+    }
+.footer .footer-brand{
+    display: inline-block;
+    text-align: left;
+    width:30%;
+    
+    }
+ .footer .copy-right{
+    display: inline-block;
+    color:rgb(141, 138, 138);
+    width:100%;
+    text-align: center;
+    margin-top: 40px;
+    }    
+/* ========================================================================
+   =========end of contact options and footer and welcom page=============*/
+
+ /* ========================================================================
+   =========start of signup options page=============*/  
+
+.super-coverSignup{
+    height: 100%;
+    /* background:#4a148c; */
+    background:url("../img/banner53.jpg");
+    background-size: cover;
+    width:100%;
+}
+.super-coverSignup .darkenSignup{
+    
+    height: 100%;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0.9);
+  }
+
+  .signup-form{
+    position: absolute;
+    top:50px;
+    width:50%;
+    z-index: 100;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border:1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+    font-weight: bold;
+    padding: 7px;
+    }
+    .signup-form .center1{
+    text-align: center;
+    padding: 25px;
+    background: darkslategrey;
+    color: white;
+    margin-top: -5px;
+    border-radius: 5px;
+    }
+    .input-divider{
+    width:48%;
+    display: inline-block;
+    margin:0px 10px 0px 0px;
+    
+    }
+    .input-field,.input-button{
+    margin:10px 0px 10px 0px;
+    
+    }
+    .input-field input[type="text"]{
+    border:1.5px solid darkslategrey;
+    }
+    .input-field input[type="password"]{
+    border:1.5px solid darkslategrey;
+    }
+    .input-field input,.input-field textarea{
+    padding:7px;
+    width:97%;
+    border-radius: 5px;
+    transition:border 0.5s linear;
+    margin-top:5px;
+    border:1.5px solid darkslategrey;
+    }
+    
+    .input-field input:focus {
+    border-color: rgb(77, 74, 74); 
+    outline: 0;
+    box-shadow: 1px 1px 1px #ccc;
+    }
+    .input-field textarea:focus{
+    border-color: rgb(77, 74, 74); 
+    outline: 0;
+    box-shadow: 1px 1px 1px #ccc;
+    }
+    .input-button, .input-button{
+    display: inline-block;
+    }  
+
+    .center{
+        text-align: center;
+        background-color: darkslategrey;
+        color: white;
+        padding: 20px;
+        border-radius: 7px;
+        margin-top: -3px;
+    }
+
+
+  /* ========================================================================
+   =========end of signup options page=============*/    
+
+
+   .container input[type=text],  .container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .container button {
+    background: rgb(189, 186, 186);
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .container button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .container .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    color: white;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 20px 0 8px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 15%;
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    position: absolute;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.88); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+ 
+/* ========================================================================
+   =========start of Login  options page=============*/      
+   .all-form{
+    position: absolute;
+    top:100px;
+    width:30%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border:1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+    padding:10px;
+
+ }
+
+ .all-form.session-request-form{
+  position: relative;
+  margin: -250px auto 0px auto;
+  box-shadow: 0 2px 20px transparent;
+
+ }
+ .input-button2{
+  position: relative;
+  /* top: 85%; */
+  left: 20%;
+ }
+ .input-button1{
+   position: relative;
+   /* top: 85%; */
+   left: 37%;
+  
+ }
+   
+
+/* ========================================================================
+   =========start of Login options page=============*/    
+   
+   
+/* ========================================================================
+   =========start of MentorDashoard options page=============*/  
+   
+   .nav1{
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    background:darkslategrey;
+    z-index: 50; 
+  }
+  .brand1{
+    font-size: 26px;
+    font-weight: bold;
+    font-family:black;
+    padding-left:10px;
+   }
+  .nav1 .menu{
+    margin:0px 30px 0px 0px;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav1 .menu1 a{
+    text-decoration: none;
+    color:white;
+    line-height: 70px;
+    margin:0 10px;
+    padding:27px 20px;
+    transition: background 0.3s linear;
+   }
+   .menu-container1{
+    float: right;
+    margin-right: 7%;
+  }
+   
+  .menu-toggle1{
+    color:white;
+    margin:0 40px 0 0;
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+   }
+   
+   .menu-toggle1 label{
+     cursor: pointer;
+   }
+   
+   .nav1 #toggle1{
+     display: none;
+   }
+   a:hover{
+    text-decoration: none;
+  }
+  .popsearch{
+    width: 17%;
+    padding:20px;
+    background-color:  white!important;
+    border-radius: 5px;
+    position: absolute;
+    top:10%;
+    z-index: 150;
+    right: 15%;
+    display: none;
+    font-family: var( --app-family);
+  }
+  .popsearch p{
+    color: red;
+    margin-top: -5px !important;
+  }
+  
+  .popsearch input[type=text] {
+    width: 20%;
+    border: 1px white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-image: url('../img/search3.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 50px !important;
+    font-size: 14px;
+    color: black;
+    padding:7px; 
+    margin-top: 2px;
+    
+  }
+  .popsearch input[type=submit]{
+    margin-top: 20px !important;
+    width: 225px;
+    height: 28px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    background-color: darkslategrey;
+  }
+  .popsearch input[type=submit]:hover{
+    opacity: 0.9;
+  }
+   .popsearch input[type=text]:focus {
+    width: 165px;
+  } 
+  .popsearch label{
+    float: right; 
+    margin-top: -35px; 
+    color: red;
+    font-size: 16px;
+  }
+    .popsearch #exit:hover{
+    font-size: 18px;
+  }
+  .MenuIcon1{
+    position: absolute;
+    top: 10px;
+    margin-top: 10px !important;
+  }
+  .MenuIcon2{
+    position: absolute;
+    top: 7px;
+    margin-top: 10px !important;
+  }
+  .auth-user{
+    height: 100px;
+    background: rgb(54,54,57);
+    /* background: linear-gradient(90deg, rgba(54,54,57,1) 0%, rgba(91,91,158,1) 35%, rgb(32, 43, 66) 100%); 
+     background: linear-gradient(90deg, rgb(105, 146, 146),  rgb(65, 97, 97) 35%, darkslategrey 100%); */
+    background: black;
+    
+    z-index: 1;
+  }
+  .auth-user-container{
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, .5);
+    color:white;
+    font-style:var(--app-family);
+  }
+  
+  .auth-avatar {
+    padding:10px;
+    }
+  .auth-avatar .img{
+    height: 90px;
+    width:90px;
+    border: none;
+    border-radius: 50px;
+    }
+  .auth-avatar p{
+    margin:5px;
+    color: white !important
+    }
+  
+  .auth-avatar .action-user-btn{
+    margin-top:10px;
+    }
+     /* mentors report */
+  .section-card{
+  
+    margin:0px auto 0px auto; 
+    width:80%;
+    border-radius: 5px;
+    background: white;
+    padding:10px;
+    box-shadow: 0 2px 15px transparent;
+    
+  }
+  
+  .section-card.dashbord-section,.section-card.mentor-section{
+    margin:-20px auto 40px auto; 
+  }
+  
+  .section-card.sessions-list{
+    margin:10px auto 40px auto; 
+  }
+  
+  .section-card .section-header{
+   padding: 0px 0px 10px 0px;
+   border-bottom:1px solid rgb(226, 223, 223);
+   margin-bottom: 10px;
+  }
+  
+  
+  .section-card .section-header .section-header-t{
+    margin:2px;
+  }
+  
+  .section-card .card{
+    display: inline-block;
+    width:48.5%;
+    margin:0 10px 15px 0;
+   
+  }
+  
+  .card{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    text-align: justify;
+    border:1px solid rgb(226, 223, 223);
+   
+  }
+  
+  .card .card-header{
+    padding:5px;
+    margin-bottom: 5px;
+    
+  }
+  
+  
+  .card-header.image .header-img{
+    width:18%;
+    text-align: center;
+    display: inline-block;
+    padding-right: 2px;
+    
+  }
+  
+  
+  
+  .card-header .header-title{
+    word-wrap: break-word;
+    
+  }
+  .card-header.image .header-title{
+    float: right;
+    width:80%;
+    word-wrap: break-word;
+    
+  }
+  
+  .header-title .title,.card-header .title{
+    margin-top:5px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    font-family: var(--app-family);
+    font-size: 17px;
+   
+  }
+  
+  
+  .header-title .sub-title{
+    font-family: var(--app-family);
+    font-size:12px;
+    margin:2px 2px 2px 0px;
+  }
+  
+  
+  
+  
+  
+  .card .header-img img{
+    height: 45px;
+    width:45px;
+    border-radius: 100%;
+    border:1px solid #ccc;
+  }
+  
+  .card .card-body{
+    padding:10px;
+  }
+  
+  .card .card-body .title{
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight:bold;
+  }
+  
+  .card .card-footer{
+    padding:10px 5px 10px 5px;
+    border-top: 1px solid rgb(226, 223, 223);
+  }
+  
+  .section-card .card .card-footer .like{
+    display: inline-block;
+    width:40%;
+    
+  }
+  
+  .sessions-list .card-footer{
+    padding:10px 5px 10px 5px;
+    text-align:right;
+  }
+  
+  
+  .btn-mentor-more{
+    display: inline-block;
+    width:55%;
+    text-align:right;
+    
+  }
+  
+  
+  .section-card .card .card-footer .btn{
+    margin-bottom:5px;
+  }
+  
+  .load-more-container{
+   padding:10px;
+   margin-top:5px;
+   border-top: 1px solid rgb(226, 223, 223);
+   text-align: center;
+  }
+  
+  .section-card .load-more-container{
+    text-align: center;
+  }
+  
+  .auth-user{
+    height: 250px;
+    background: rgb(54,54,57);
+    /* background: linear-gradient(90deg, rgba(54,54,57,1) 0%, rgba(91,91,158,1) 35%, rgba(3,49,144,1) 100%); */
+    z-index: 1;
+  }
+  
+  .auth-user-container{
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, .5);
+    color:white;
+    font-style:var(--app-family);
+  }
+  
+  .auth-avatar {
+    padding:10px;
+  }
+  
+  .auth-avatar .img{
+    height: 80px;
+    width:80px;
+    border:2px solid white;
+  }
+  .auth-avatar p{
+    margin:5px;
+  }
+  
+  .auth-avatar .action-user-btn{
+     margin-top:10px;
+     
+  }
+  
+  .session-details{
+    width:40%;
+    margin-top: -150px;
+  
+  }
+  
+  .session-details .card{
+    width:100% !important;
+    display: block !important;
+    border:none !important;
+   
+  }
+  
+  .session-details .card .card-body{
+    border-bottom:1px solid #ccc;
+    margin-bottom: 0px !important;
+  }
+  
+  .session-details .card .card-body .user-img{
+    height: 120px;
+    width:120px;
+    border:2px solid var(--app_color);
+  }
+
+  /* setting codes */
+  #myNavBar {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000008f;
+    position:fixed;
+    z-index: 90;
+    /* display: none; */
+    margin-left: -100%;
+    transition:100ms;
+  }
+  .nav-admin{
+    height: 100%;
+    position:fixed;
+    top:0%;
+    margin-left: -350px;
+    z-index:100;
+    background-color: black;
+    transition:0.4s;
+  }
+  .nav-admin .menu-opacity{
+    background:var(--transp-black-color);
+    background:rgb(22, 43, 43);
+    height: 100%;
+    width:350px;
+  }
+  .nav-admin a{
+    color:white;
+    font-size: 14px;
+    padding:10px;
+    line-height: 2.2em;
+    text-transform: uppercase;
+    display:block;
+    font-weight: bold;
+    /* transition: background 0.5s linear,font-size 0.5s linear; */
+  
+  }
+  
+  .nav-admin a:hover{
+    background: black;;
+    transition: none;
+    /* font-size: 15px; */
+    /* font-style: oblique; */
+  }
+  .nav-admin .close{
+   
+    border-radius: 20px;
+    text-align:right;
+    font-size:20px;
+    padding:5px 15px;
+    font-weight: bold;
+    line-height: 1.3em;
+    /* background: white; */
+    color: #9758e4 !important;
+  }
+  .nav-admin .close:hover{
+    background:none;
+    color: red !important;
+    font-size: 20px;
+    font-style: normal;
+  }
+  
+ .circle{
+   margin-top: 10px;
+  border-radius:100%;
+  width:60px;
+  height: 60px;
+}
+
+/* login Code start here */
+
+.input-button1{
+  /* position: absolute; */
+  font-weight: bold;
+   /* color: white; */
+   /* transform: translate(500px, 150px); */
+   z-index: 5;
+}
+.input-button1 p{
+  margin-left: 20px;
+}
+
+.container input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.container button {
+  background: rgb(189, 186, 186);
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.container button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.container .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  color: white;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0 8px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 15%;
+  border: 1px solid rgb(175, 174, 174);
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+  
+/* ========================================================================
+  =========start of MentorDashoard options page=============*/   
+
+
+    
+  
